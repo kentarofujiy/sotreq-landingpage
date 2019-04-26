@@ -85,7 +85,7 @@ production:
   <<: *default
   database: appuser
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: <%= ENV.fetch("OS_DATABASE_USER") %>
-  password: <%= ENV.fetch("OS_DATABASE_PASSWORD") %>
+  username: 'appuser'
+  password: 'password'
   host: <%= ENV.fetch("OS_DATABASE_HOST") %>
   template: template0
